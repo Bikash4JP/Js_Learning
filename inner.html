@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">we use innerHTML to change text in html through Javascript . click the button to ssee the changes</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button> -->
+<!-- <button type="button"onclick= "document.getElementById('demo').innerHTML='See!!! The  pargraph has been changed '">Click Me </button> -->
+<!-- <button type="reset">Back</button> -->
+
+<!-- </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<!-- <p id="demo">We use innerHTML to change text in HTML through Javascript. Click the button to see the changes.</p>
+
+<button type="button" id="changeButton" onclick="changeText()">Click Me</button>
+<button type="button" id="backButton" style="display:none;" onclick="backText()">Back</button>
+
+<script>
+// Function to change the text
+function changeText() {
+    document.getElementById('demo').innerHTML = 'See!!! The paragraph has been changed.'; // This line changes the innerHTML of the paragraph with id 'demo' to the new text.
+    document.getElementById('backButton').style.display = 'inline'; // This line makes the "Back" button visible by changing its style display property to 'inline'.
+    document.getElementById('changeButton').style.display = 'none'; // This line hides the "Click Me" button by setting its display style to 'none'.
+}
+
+// Function to revert the text
+function backText() {
+    document.getElementById('demo').innerHTML = 'We use innerHTML to change text in HTML through Javascript. Click the button to see the changes.'; // This line resets the innerHTML of the paragraph back to its original text.
+    document.getElementById('backButton').style.display = 'none'; // This line hides the "Back" button again by setting its display style to 'none'.
+    document.getElementById('changeButton').style.display = 'inline'; // This line makes the "Click Me" button visible again by changing its display style to 'inline'.
+}
+
+</script> -->
+<!-- Lets Practise once by self >>> -->
+<p id="sample">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.</p>
+<button type ="button" id="Enter" onclick="Enter()">Lets Go</button>
+<button type="button" id="Exit" style="display: none;" onclick="Exit()"  >Return</button>
+<script>
+    function Enter(){
+        document.getElementById("sample").innerHTML="You are now inter in my zone";
+        document.getElementById("Enter").style.display='none';
+        document.getElementById("Exit").style.display = 'inline';
+    }
+    function Exit(){
+        document.getElementById("sample").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.";
+        document.getElementById('Exit').style.display = 'none';
+        document.getElementById('Enter').style.display='inline';
+    }
+</script>
+
+</body>
+</html>

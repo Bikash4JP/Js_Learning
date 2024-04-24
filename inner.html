@@ -40,22 +40,39 @@ function backText() {
 
 </script> -->
 <!-- Lets Practise once by self >>> -->
-<p id="sample">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.</p>
+<p id="sample">Hey you want to see something ?</p>
 <button type ="button" id="Enter" onclick="Enter()">Lets Go</button>
-<button type="button" id="continue" onclick="continues()" style="display: none;">Continue </button>
+<button type="button" id="no" onclick="fu()">No</button>
+<button type="button" id="continue" onclick="continues()" style="display: none;">Ready </button>
 <button type="button" id="Exit" style="display: none;" onclick="Exit()"  >Return</button>
 <script>
     function Enter(){
-        document.getElementById("sample").innerHTML="You are now inter in my zone";
+        document.getElementById("sample").innerHTML="Are you ready to see?";
+        document.getElementById("no").style.display='inline'
         document.getElementById("Enter").style.display='none';
-        document.getElementById("continue").style.display='none';
+        document.getElementById("continue").style.display='inline';
         document.getElementById("Exit").style.display = 'inline';
     }
     function Exit(){
         document.getElementById("sample").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.";
         document.getElementById('Exit').style.display = 'none';
+        document.getElementById("no").style.display='none';
         document.getElementById('Enter').style.display='inline';
-        document.getElementById("continue").style.display='inline';
+        document.getElementById("continue").style.display='none';
+    }
+    function continues(){
+        document.getElementById("sample").innerHTML="お前もう死んでいる!!";
+        document.getElementById('Exit').style.display = 'inline';
+        document.getElementById('Enter').style.display='none';
+        document.getElementById("continue").style.display='none';
+        document.getElementById("no").style.display='none';
+    }
+    function fu(){
+        document.getElementById("sample").innerHTML="Go to Hell ,, I hate you";
+        document.getElementById('Exit').style.display = 'inline';
+        document.getElementById('Enter').style.display='none';
+        document.getElementById("continue").style.display='none';
+        document.getElementById("no").style.display='none';
     }
 </script>
 

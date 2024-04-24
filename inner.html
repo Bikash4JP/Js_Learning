@@ -42,17 +42,20 @@ function backText() {
 <!-- Lets Practise once by self >>> -->
 <p id="sample">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.</p>
 <button type ="button" id="Enter" onclick="Enter()">Lets Go</button>
+<button type="button" id="continue" onclick="continues()" style="display: none;">Continue </button>
 <button type="button" id="Exit" style="display: none;" onclick="Exit()"  >Return</button>
 <script>
     function Enter(){
         document.getElementById("sample").innerHTML="You are now inter in my zone";
         document.getElementById("Enter").style.display='none';
+        document.getElementById("continue").style.display='none';
         document.getElementById("Exit").style.display = 'inline';
     }
     function Exit(){
         document.getElementById("sample").innerHTML="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloribus ipsam.";
         document.getElementById('Exit').style.display = 'none';
         document.getElementById('Enter').style.display='inline';
+        document.getElementById("continue").style.display='inline';
     }
 </script>
 
